@@ -1,0 +1,14 @@
+{
+  "budget": 2,
+  "stale_error_code": "E_STALE_TS",
+  "key_error_code": "E_NO_KEY",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "entries": {}, "tombstones": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "put", "key": "k1", "value": 5, "ts": 1 },
+    { "id": 2, "kind": "put", "key": "k2", "value": 7, "ts": 1 },
+    { "id": 3, "kind": "del", "key": "k1", "ts": 2 },
+    { "id": 4, "kind": "put", "key": "k1", "value": 9, "ts": 3 },
+    { "id": 5, "kind": "del", "key": "k2", "ts": 2 }
+  ]
+}
